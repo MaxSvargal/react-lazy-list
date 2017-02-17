@@ -1,4 +1,9 @@
 # react-lazy-list
+
+[![Build Status](https://travis-ci.org/MaxSvargal/react-lazy-list.svg?branch=master)](https://travis-ci.org/MaxSvargal/react-lazy-list)
+[![Coverage Status](https://coveralls.io/repos/github/MaxSvargal/react-lazy-list/badge.svg?branch=master)](https://coveralls.io/github/MaxSvargal/react-lazy-list?branch=master)
+[![Dependencies Status](https://david-dm.org/MaxSvargal/react-lazy-list.svg)](https://david-dm.org/MaxSvargal/react-lazy-list)
+
 This is a simple and fast realization of lazy list as the react component that show entities only when user can see them. Thats why it can render very large lists and does not lose performance.
 
 ```javascript
