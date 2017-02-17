@@ -1,2 +1,43 @@
 # react-lazy-list
-Lazy list react component for render very large Infinitely lists
+This is a simple and fast realization of lazy list as the react component that show entities only when user can see them. Thats why it can render very large lists and does not lose performance.
+
+```javascript
+import React, { Component } from 'react'
+import LazyList from 'react-lazy-list'
+
+export default class App extends Component {
+  render() {
+    const onMoreHandle = () => void
+    return (
+      <LazyList elementHeight={ 300 } onMore={ this.onMoreHandle } >
+        { entities.map(entity => (
+          <Item key={ entity.id } entity={ entity } />
+        )) }
+        <Dummy />
+      </LazyList>
+    )
+  }
+}
+```
+
+## props
+
+### `children`
+`Object` **required** Entities collection to render.
+
+### `elementHeight`
+`Number` **required** Pixels number of height of collection entity.
+
+### `windowHeight`
+`Number` Custom container height in pixels, i.e. for server side rendering.
+
+### `topScrollOffset`
+`Number` Offset from top of window to increase the threshold of the moment trip.
+Usable to make a scroll offset for header height.
+
+### `bottomScrollOffset`
+`Number` Offset from top of window to decrease the threshold of the moment trip.
+Usable for increase value an scroll offset for header height.
+
+### `onMore`
+`Function` Handler to call then list seek to end.
