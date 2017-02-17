@@ -6,6 +6,11 @@
 
 This is a simple and fast realization of lazy list as the react component that show entities only when user can see them. Thats why it can render very large lists and does not lose performance.
 
+## Installation
+`npm install --save react-lazy-list`
+
+## Example
+
 ```javascript
 import React, { Component } from 'react'
 import LazyList from 'react-lazy-list'
